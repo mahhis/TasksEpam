@@ -1,9 +1,9 @@
-package com.company;
+package Task1;
 
 import java.util.Scanner;
 
 public class DataScanner {
-    public static int  enterIntegerFromConsole(){
+    public static int  enterIntegerToConsole(){
 
         Scanner scanner = new Scanner(System.in);
 
@@ -11,6 +11,7 @@ public class DataScanner {
 
         while (!scanner.hasNextInt()){
             scanner.next();
+            System.out.println("It is not an integer, please try again ");
         }
         a=scanner.nextInt();
 

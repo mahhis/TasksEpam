@@ -1,4 +1,4 @@
-package com.company;
+package Task1;
 
 public class Main {
 
@@ -7,9 +7,9 @@ public class Main {
 
         int OurNumber, Result;
 
-        System.out.println("Enter your number ");
+        System.out.println("Enter your INTEGER number ");
 
-        OurNumber = DataScanner.enterIntegerFromConsole();
+        OurNumber = DataScanner.enterIntegerToConsole();
 
         Result = SquareOfOurNumber.LastDigit(OurNumber);
 
