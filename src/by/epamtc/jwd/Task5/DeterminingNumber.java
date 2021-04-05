@@ -1,14 +1,14 @@
 package by.epamtc.jwd.Task5;
 
-public class DeterminingTheNumber {
+public class DeterminingNumber {
     public static boolean isPerfectNumberOrNot(int integer){
-        int summa =0;
+        int sum =0;
         for(int i=1;i<integer;i++) {
             if(integer%i==0){
-                summa+=i;
+                sum+=i;
             }
         }
-        if(summa==integer) {
+        if(sum==integer) {
             return true;
         }
         else {

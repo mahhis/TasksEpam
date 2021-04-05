@@ -2,14 +2,14 @@ package by.epamtc.jwd.Task1;
 
 public class SquareOfOurNumber {
 
-    public static  int LastDigit (Integer number){
+    public static  int squaring (Integer number){
 
-        final int valueToDetermineTheLastNumber = 10;
+        final int valueToDetermineLastNumber = 10;
 
-        int integer = number%valueToDetermineTheLastNumber;
+        int lastNumber = number%valueToDetermineLastNumber;
 
-        integer=integer*integer;
+        int lastNumberSquare = lastNumber * lastNumber;
 
-        return integer;
+        return lastNumberSquare;
     }
 }

@@ -1,7 +1,7 @@
 package by.epamtc.jwd.Task3;
 
-public class AreaTransformations {
-    public static double areaOfSmallerSquare(double d){
+public class Area {
+    public static double obtainingSquareInscribedCircle(double d){
 
         double circleRadius, sideOfLargerSquare, sideOfSmallerSquare, areaOfSmallerSquare;
 
@@ -19,7 +19,7 @@ public class AreaTransformations {
         return areaOfSmallerSquare;
 
     }
-    public static double areaDifference (Double areaOfTheLargerSquare, Double areaOfTheSmallerSquare){
+    public static double calculatingAreaDifference (Double areaOfTheLargerSquare, Double areaOfTheSmallerSquare){
         double areaDifference;
 
         areaDifference = areaOfTheLargerSquare/areaOfTheSmallerSquare;

@@ -1,13 +1,13 @@
 package by.epamtc.jwd.Task7;
 
-public class DeterminingDistanceAndDifference {
-    public static double distanceToOrigin(double X, double Y){
+public class DistanceAndDifference {
+    public static double calculatingDistanceToOrigin(double valueX, double valueY){
 
-        double distance;
+        double distanceToOrigin;
 
-        distance = Math.sqrt((X*X) + (Y*Y));
+        distanceToOrigin = Math.sqrt((valueX*valueX) + (valueY*valueY));
 
-        return distance;
+        return distanceToOrigin;
     }
     public static void whoIsCloserToTheOrigin(double firstDistance, double secondDistance){
 

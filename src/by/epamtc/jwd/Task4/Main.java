@@ -14,21 +14,21 @@ public class Main {
         numberC=enterIntegerToConsole();
         numberD=enterIntegerToConsole();
 
-        System.out.println(DeterminingTheNumber.isMoreThanToEvenNumbers(numberA,numberB, numberC, numberD));
+        System.out.println(DeterminingNumber.isMoreThanToEvenNumbers(numberA,numberB, numberC, numberD));
     }
 
     public static int  enterIntegerToConsole(){
 
         Scanner scanner = new Scanner(System.in);
 
-        int integerNumber;
+        int enteredNumber;
 
         while (!scanner.hasNextInt()){
             scanner.next();
             System.out.println("It is not an integer, please try again ");
         }
-        integerNumber=scanner.nextInt();
+        enteredNumber=scanner.nextInt();
 
-        return integerNumber;
+        return enteredNumber;
     }
 }

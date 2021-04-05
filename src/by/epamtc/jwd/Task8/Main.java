@@ -5,32 +5,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        double X;
+        double valueX;
 
         System.out.println("Please enter a value for X");
-        X = enterXToConsole();
-        FunctionComputation.whichFunctionWorks(X);
+        valueX = enterXToConsole();
+        System.out.println(FunctionComputation.launchDesiredFunction(valueX));
 
     }
     public static double enterXToConsole() {
 
-        Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
 
-        double X, temp;
+            double enteredNumber;
 
-        while (true) {
-            if (scanner.hasNextInt()) {
-                temp = scanner.nextInt();
-                if (temp != Math.pow(6, (1 / 3))) {
-                    X = temp;
-                    break;
-                } else {
-                    System.out.println("Can't divide by zero");
-                }
-            } else {
+            while (!scanner.hasNextDouble()) {
                 scanner.next();
+                System.out.println("It is not a double, please try again ");
             }
+            enteredNumber = scanner.nextDouble();
+
+            return enteredNumber;
         }
-        return X;
     }
-}

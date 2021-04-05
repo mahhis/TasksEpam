@@ -5,37 +5,37 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int YearNumber, MonthNumber, NumberOfDaysInAMonth;
-        String NameOfTheYear;
+        int yearNumber, monthNumber, numberOfDaysInAMonth;
+        String nameOfTheYear;
 
-        System.out.println("Enter the year from 0 to 2021 in the correct form");
+        System.out.println("Enter year AD");
 
-        YearNumber = enterYearToConsole();
+        yearNumber = enterYearToConsole();
 
-        NameOfTheYear = DeterminingYearAndDays.DefinitionYear(YearNumber);
+        nameOfTheYear = DeterminingYearAndDays.definitionYear(yearNumber);
 
-        System.out.println("This is " + NameOfTheYear);
+        System.out.println("This is " + nameOfTheYear);
 
         System.out.println("Enter the number of the month in your year ");
 
-        MonthNumber = enterMonthToConsole();
+        monthNumber = enterMonthToConsole();
 
-        NumberOfDaysInAMonth = DeterminingYearAndDays.DefinitionDaysInMonth(MonthNumber, NameOfTheYear);
+        numberOfDaysInAMonth = DeterminingYearAndDays.definitionDaysInMonth(monthNumber, nameOfTheYear);
 
-        System.out.println("This month has " + NumberOfDaysInAMonth+  " days");
+        System.out.println("This month has " + numberOfDaysInAMonth+  " days");
 
     }
     public static int  enterYearToConsole(){
 
         Scanner scanner = new Scanner(System.in);
 
-        int year,temp;
+        int year,checkValue;
 
         while (true){
             if (scanner.hasNextInt()) {
-                temp=scanner.nextInt();
-                if (temp <= 2021 && temp >= 0) {
-                    year=temp;
+                checkValue=scanner.nextInt();
+                if (checkValue >= 0) {
+                    year=checkValue;
                     break;
                 } else {
                     System.out.println("this is an incorrect value for the year, please try again");
@@ -51,18 +51,19 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int month,temp;
+        int month,checkValue;
 
         while (true){
             if (scanner.hasNextInt()) {
-                temp=scanner.nextInt();
-                if (temp <= 12 && temp >= 1) {
-                    month=temp;
+                checkValue=scanner.nextInt();
+                if (checkValue <= 12 && checkValue >= 1) {
+                    month=checkValue;
                     break;
                 } else {
                     System.out.println("this is an incorrect value for the month, please try again");
                 }
             }else  {
+                System.out.println("this is an incorrect value for the month, please try again");
                 scanner.next();
             }
         }

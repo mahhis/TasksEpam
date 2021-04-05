@@ -6,29 +6,29 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int OurNumber, Result;
+        int ourNumber, result;
 
         System.out.println("Enter your INTEGER number ");
 
-        OurNumber = enterIntegerToConsole();
+        ourNumber = enterIntegerToConsole();
 
-        Result = SquareOfOurNumber.LastDigit(OurNumber);
+        result = SquareOfOurNumber.squaring(ourNumber);
 
-        System.out.println("The square of the last digit of your number is " + Result);
+        System.out.println("The square of the last digit of your number is " + result);
     }
     public static int  enterIntegerToConsole(){
 
         Scanner scanner = new Scanner(System.in);
 
-        int integer;
+        int enteredNumber;
 
         while (!scanner.hasNextInt()){
             scanner.next();
             System.out.println("It is not an integer, please try again ");
         }
-        integer=scanner.nextInt();
+        enteredNumber=scanner.nextInt();
 
-        return integer;
+        return enteredNumber;
     }
 
 }

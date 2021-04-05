@@ -10,10 +10,10 @@ public class Main {
         areaOfTheLargerSquare=enterAreaToConsole();
         System.out.println("Enter the area of the larger square ");
 
-        areaOfTheSmallerSquare=AreaTransformations.areaOfSmallerSquare(areaOfTheLargerSquare);
+        areaOfTheSmallerSquare=Area.obtainingSquareInscribedCircle(areaOfTheLargerSquare);
         System.out.println("The area of the inscribed square is "+areaOfTheSmallerSquare);
 
-        areaDifference=AreaTransformations.areaDifference(areaOfTheLargerSquare, areaOfTheSmallerSquare);
+        areaDifference=Area.calculatingAreaDifference(areaOfTheLargerSquare, areaOfTheSmallerSquare);
         System.out.println("The area of the described square is " +areaDifference+ " times larger than the inscribed");
     }
 

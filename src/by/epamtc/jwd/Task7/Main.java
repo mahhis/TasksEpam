@@ -17,26 +17,26 @@ public class Main {
         System.out.println("Y2 = ");
         pointY2 = enterValueCoordinates();
 
-        distanceFirstPointToOrigin = DeterminingDistanceAndDifference.distanceToOrigin(pointX1, pointY1);
+        distanceFirstPointToOrigin = DistanceAndDifference.calculatingDistanceToOrigin(pointX1, pointY1);
         System.out.println("Distance of the first point to the origin is " + distanceFirstPointToOrigin);
 
-        distanceSecondPointToOrigin = DeterminingDistanceAndDifference.distanceToOrigin(pointX2, pointY2);
+        distanceSecondPointToOrigin = DistanceAndDifference.calculatingDistanceToOrigin(pointX2, pointY2);
         System.out.println("Distance of the second point to the origin is " + distanceSecondPointToOrigin);
 
-        DeterminingDistanceAndDifference.whoIsCloserToTheOrigin(distanceFirstPointToOrigin, distanceSecondPointToOrigin);
+        DistanceAndDifference.whoIsCloserToTheOrigin(distanceFirstPointToOrigin, distanceSecondPointToOrigin);
 
     }
     public static double enterValueCoordinates(){
         Scanner scanner = new Scanner(System.in);
 
-        double value;
+        double enteredValue;
 
         while (!scanner.hasNextDouble()){
             scanner.next();
             System.out.println("It is not an integer, please try again ");
         }
-        value=scanner.nextDouble();
+        enteredValue=scanner.nextDouble();
 
-        return value;
+        return enteredValue;
     }
 }

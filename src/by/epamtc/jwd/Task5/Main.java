@@ -12,7 +12,7 @@ public class Main {
 
         enteredNumber = enterIntegerToConsole();
 
-        result = DeterminingTheNumber.isPerfectNumberOrNot(enteredNumber);
+        result = DeterminingNumber.isPerfectNumberOrNot(enteredNumber);
 
         System.out.println(result);
     }
@@ -21,14 +21,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int integerNumber;
+        int enteredNumber;
 
         while (!scanner.hasNextInt()) {
             scanner.next();
             System.out.println("It is not an integer, please try again ");
         }
-        integerNumber = scanner.nextInt();
+        enteredNumber = scanner.nextInt();
 
-        return integerNumber;
+        return enteredNumber;
     }
 }

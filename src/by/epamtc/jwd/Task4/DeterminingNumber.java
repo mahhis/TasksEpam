@@ -1,6 +1,6 @@
 package by.epamtc.jwd.Task4;
 
-public class DeterminingTheNumber {
+public class DeterminingNumber {
     public static boolean isMoreThanToEvenNumbers(int a, int b, int c, int d){
 
         int counter = 0;

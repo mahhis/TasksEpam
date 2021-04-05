@@ -4,20 +4,22 @@ public class LengthAndArea {
 
     static double Pi = 3.14;
 
-    public static void calculationLenght(double radius){
+    public static double calculationLenght(double radius){
 
         double lenghtCircumference;
         final int coefficientForFormula = 2;
         lenghtCircumference = coefficientForFormula*Pi*radius;
-        System.out.println("the length of the circumference is " + lenghtCircumference);
+
+        return lenghtCircumference;
     }
 
-    public static void calculationArea(double radius){
+    public static double calculationArea(double radius){
 
-        double AreaCircle;
+        double areaCircle;
         final int degreeOfRadiusForFormula = 2;
-        AreaCircle = Pi*Math.pow(radius, degreeOfRadiusForFormula);
-        System.out.println("area of a circle is " + AreaCircle);
+        areaCircle = Pi*Math.pow(radius, degreeOfRadiusForFormula);
+
+        return  areaCircle;
     }
 
 
